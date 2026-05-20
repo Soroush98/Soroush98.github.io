@@ -1,16 +1,24 @@
-## Hi there 👋
+## Soroush Portfolio
 
-<!--
-**Soroush98/Soroush98** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This repository contains a modern portfolio website built with the latest Next.js framework.
 
-Here are some ideas to get you started:
+### What is included
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- 🚀 A clean statically-generated portfolio layout using the Next.js app router
+- 🌐 Showcased projects: `findconnections.net` and `ezrelocate.org`
+- 🎓 Listed Coursera and Udemy certifications
+- 📚 Highlighted publications and research contributions
+
+### Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+### Built with
+
+- Next.js
+- React
+- TypeScript
+- Custom responsive CSS
