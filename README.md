@@ -1,13 +1,10 @@
-## Soroush Portfolio
+## Soroosh Esmaeilian
 
-This repository contains a modern portfolio website built with the latest Next.js framework.
+ML Engineer based in Edmonton, Canada. MSc, Computer Science (University of Calgary).
 
-### What is included
+Currently investigating LLMs and RAG systems. Background in PyTorch, anomaly detection on IoT edge, and SDN research.
 
-- 🚀 A clean statically-generated portfolio layout using the Next.js app router
-- 🌐 Showcased projects: `findconnections.net` and `ezrelocate.org`
-- 🎓 Listed Coursera and Udemy certifications
-- 📚 Highlighted publications and research contributions
+This repo is my portfolio site, built with Next.js 16.
 
 ### Run locally
 
@@ -16,9 +13,8 @@ npm install
 npm run dev
 ```
 
-### Built with
+### Links
 
-- Next.js
-- React
-- TypeScript
-- Custom responsive CSS
+- Site: https://soroush98.github.io
+- LinkedIn: https://www.linkedin.com/in/sorooshes98
+- Email: soroosh.esmaeilian@gmail.com
