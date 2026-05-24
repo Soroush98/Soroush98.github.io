@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { JetBrains_Mono, Inter } from 'next/font/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import './globals.css';
 
 const mono = JetBrains_Mono({
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${mono.variable} ${inter.variable}`}>
       <body>{children}</body>
+      <GoogleAnalytics gaId="G-H8V6R3M61X" />
     </html>
   );
 }
