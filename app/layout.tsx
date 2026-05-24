@@ -6,18 +6,20 @@ const mono = JetBrains_Mono({
   subsets: ['latin'],
   variable: '--font-mono',
   display: 'swap',
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['400', '500', '600'],
 });
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-sans',
   display: 'swap',
+  weight: ['400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
-  title: 'soroosh.esmaeilian — ml engineer',
-  description: 'ml engineer · llms · rag · anomaly detection · calgary',
+  title: 'Soroosh Esmaeilian · ML Engineer · LLMs · RAG',
+  description:
+    'Machine Learning Engineer building production LLM and RAG systems. MSc, University of Calgary.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

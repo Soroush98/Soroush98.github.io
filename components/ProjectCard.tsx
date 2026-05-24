@@ -1,41 +1,47 @@
+import Image from 'next/image';
+
 type ProjectCardProps = {
   title: string;
   description: string;
   link: string;
   tags: string[];
-  path?: string;
+  image?: string;
 };
 
-export default function ProjectCard({ title, description, link, tags, path }: ProjectCardProps) {
-  const filePath = path ?? `~/work/${title.toLowerCase().replace(/\s+/g, '-')}/README.md`;
+export default function ProjectCard({ title, description, link, tags, image }: ProjectCardProps) {
   return (
-    <article className="terminal-window project-window">
-      <div className="tw-titlebar">
-        <span className="tw-dot tw-dot-r" />
-        <span className="tw-dot tw-dot-y" />
-        <span className="tw-dot tw-dot-g" />
-        <span className="tw-title">{filePath}</span>
-        <span className="tw-status">live</span>
-      </div>
-      <div className="tw-body project-body">
-        <div className="project-name">
-          <span className="comment"># </span>
-          {title}
+    <article className="proj-card">
+      {image && (
+        <a className="proj-image" href={link} target="_blank" rel="noreferrer" aria-label={`Open ${title}`}>
+          <Image
+            src={image}
+            alt={`${title} screenshot`}
+            width={800}
+            height={450}
+            sizes="(max-width: 720px) 100vw, (max-width: 1180px) 50vw, 560px"
+          />
+        </a>
+      )}
+      <div className="proj-body">
+        <div className="proj-head">
+          <h3 className="proj-title">{title}</h3>
+          <div className="proj-icon" aria-hidden>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 2l2.39 4.84L20 7.5l-4 3.9.94 5.5L12 14.27 7.06 16.9 8 11.4l-4-3.9 5.61-.66L12 2z" />
+            </svg>
+          </div>
         </div>
-        <p className="project-desc">{description}</p>
-        <div className="project-tags">
-          <span className="comment">tags: </span>
-          {tags.map((t, i) => (
-            <span key={t} className="bracket-tag">
-              <span className="bracket">[</span>
-              {t}
-              <span className="bracket">]</span>
-              {i < tags.length - 1 && <span className="comment-soft"> </span>}
-            </span>
+        <p className="proj-desc">{description}</p>
+        <div className="proj-tags">
+          {tags.map((t) => (
+            <span key={t} className="proj-tag">{t}</span>
           ))}
         </div>
-        <a className="project-link" href={link} target="_blank" rel="noreferrer">
-          <span className="prompt-sigil">$</span> open {link.replace(/^https?:\/\//, '')}
+        <a className="proj-link" href={link} target="_blank" rel="noreferrer">
+          Visit site
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M7 17L17 7M9 7h8v8" />
+          </svg>
         </a>
       </div>
     </article>

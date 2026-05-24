@@ -1,60 +1,102 @@
-'use client';
+type Skill = { name: string };
+type Group = { title: string; subtitle: string; icon: React.ReactNode; items: Skill[] };
 
-type Skill = { name: string; weight?: number };
+const Icon = {
+  brain: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-3 3v2a3 3 0 0 0 3 3v1a3 3 0 0 0 3 3" />
+      <path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 3 3v2a3 3 0 0 1-3 3v1a3 3 0 0 1-3 3" />
+      <path d="M12 7v10" />
+    </svg>
+  ),
+  server: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="4" width="18" height="6" rx="2" />
+      <rect x="3" y="14" width="18" height="6" rx="2" />
+      <path d="M7 7h.01M7 17h.01" />
+    </svg>
+  ),
+  code: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+    </svg>
+  ),
+  net: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
+    </svg>
+  ),
+};
 
-const groups: { title: string; items: Skill[] }[] = [
+const groups: Group[] = [
   {
-    title: 'ml + ai',
+    title: 'AI & Machine Learning',
+    subtitle: 'LLMs, RAG, deep learning',
+    icon: Icon.brain,
     items: [
-      { name: 'llms', weight: 3 },
-      { name: 'rag', weight: 3 },
-      { name: 'anomaly-detection', weight: 3 },
-      { name: 'machine-learning', weight: 3 },
-      { name: 'deep-learning', weight: 2 },
-      { name: 'tensorflow' },
-      { name: 'keras' },
-      { name: 'xgboost' },
-      { name: 'word-embeddings' },
-      { name: 'neural-networks' },
+      { name: 'LLMs' },
+      { name: 'RAG' },
+      { name: 'Claude API' },
+      { name: 'OpenAI API' },
+      { name: 'Gemma' },
+      { name: 'Prompt Engineering' },
+      { name: 'Tool-use Agents' },
+      { name: 'Anomaly Detection' },
+      { name: 'LSTM' },
+      { name: 'PyTorch' },
+      { name: 'TensorFlow' },
+      { name: 'Keras' },
+      { name: 'XGBoost' },
+      { name: 'Embeddings' },
     ],
   },
   {
-    title: 'backend + infra',
+    title: 'Backend & Infrastructure',
+    subtitle: 'APIs, databases, cloud',
+    icon: Icon.server,
     items: [
-      { name: 'python', weight: 3 },
-      { name: 'fastapi', weight: 2 },
-      { name: 'postgres', weight: 2 },
-      { name: 'pgvector', weight: 2 },
-      { name: 'docker', weight: 2 },
-      { name: 'kubernetes' },
-      { name: 'aws' },
-      { name: 'lambda' },
-      { name: 'ec2' },
-      { name: 's3' },
-      { name: 'nginx' },
-      { name: 'neo4j' },
-      { name: 'postgis' },
-      { name: 'ci/cd' },
+      { name: 'Python' },
+      { name: 'FastAPI' },
+      { name: 'Flask' },
+      { name: 'PostgreSQL' },
+      { name: 'pgvector' },
+      { name: 'Docker' },
+      { name: 'Kubernetes' },
+      { name: 'AWS' },
+      { name: 'Lambda' },
+      { name: 'EC2' },
+      { name: 'S3' },
+      { name: 'Neo4j' },
+      { name: 'PostGIS' },
+      { name: 'Nginx' },
+      { name: 'CI/CD' },
     ],
   },
   {
-    title: 'frontend + lang',
+    title: 'Frontend & Languages',
+    subtitle: 'Full-stack delivery',
+    icon: Icon.code,
     items: [
-      { name: 'next.js', weight: 2 },
-      { name: 'react' },
-      { name: 'javascript' },
-      { name: 'java' },
-      { name: 'c++' },
-      { name: 'go' },
-      { name: 'bash' },
+      { name: 'Next.js' },
+      { name: 'React' },
+      { name: 'TypeScript' },
+      { name: 'JavaScript' },
+      { name: 'Java' },
+      { name: 'C++' },
+      { name: 'Go' },
+      { name: 'Bash' },
     ],
   },
   {
-    title: 'networking + low-level',
+    title: 'Networking & Systems',
+    subtitle: 'Research foundations',
+    icon: Icon.net,
     items: [
-      { name: 'bgp' },
-      { name: 'ospf' },
-      { name: 'wireshark' },
+      { name: 'SDN' },
+      { name: 'BGP' },
+      { name: 'OSPF' },
+      { name: 'Wireshark' },
       { name: 'ns-3' },
     ],
   },
@@ -62,20 +104,19 @@ const groups: { title: string; items: Skill[] }[] = [
 
 export default function SkillCloud() {
   return (
-    <div className="skill-stack">
+    <div className="skill-grid">
       {groups.map((g) => (
-        <div key={g.title} className="skill-group">
-          <div className="skill-group-head">
-            <span className="prompt-sigil">$</span>
-            <span className="prompt-cmd">ls skills/{g.title.replace(/\s\+\s/g, '_')}/</span>
+        <div key={g.title} className="skill-card">
+          <div className="skill-head">
+            <div className="skill-icon" aria-hidden>{g.icon}</div>
+            <div>
+              <div className="skill-title">{g.title}</div>
+              <div className="skill-sub">{g.subtitle}</div>
+            </div>
           </div>
-          <div className="skill-chips">
+          <div className="skill-pills">
             {g.items.map((s) => (
-              <span key={s.name} className={`bracket-tag bracket-w${s.weight ?? 1}`}>
-                <span className="bracket">[</span>
-                {s.name}
-                <span className="bracket">]</span>
-              </span>
+              <span key={s.name} className="skill-pill">{s.name}</span>
             ))}
           </div>
         </div>
