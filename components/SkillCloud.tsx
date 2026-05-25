@@ -43,7 +43,7 @@ const groups: Group[] = [
       { name: 'Prompt Engineering' },
       { name: 'Tool-use Agents' },
       { name: 'Anomaly Detection' },
-      { name: 'LSTM' },
+      { name: 'Multi-task Learning' },
       { name: 'PyTorch' },
       { name: 'TensorFlow' },
       { name: 'Keras' },

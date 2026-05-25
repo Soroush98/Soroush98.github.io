@@ -7,12 +7,12 @@ import Timeline from '../components/Timeline';
 
 const projects = [
   {
-    title: 'FindConnections.net',
+    title: 'Granted',
     description:
-      'A Next.js app that lets anyone discover connections between notable individuals by finding instances where they appear together in a photo, either directly or through a short chain of mutual photos. Inspired by six degrees of separation.',
-    link: 'https://findconnections.net',
-    tags: ['Next.js', 'Graph', 'Photos', 'Six Degrees'],
-    image: '/Findconnections.png',
+      'Find Canadian companies actually doing funded R&D. Upload a resume, paper, or project brief and the system matches you against 48K+ indexed grants from 9 federal and provincial funding sources, surfacing organizations with overlapping research interests.',
+    link: 'https://granted-web.vercel.app/',
+    tags: ['Next.js', 'RAG', 'Embeddings', 'R&D Search'],
+    image: '/Granted.png',
   },
   {
     title: 'EZRelocate.org',
@@ -22,6 +22,14 @@ const projects = [
     tags: ['LLM', 'RAG', 'Map Search', 'Rentals'],
     image: '/EZrelocate.png',
   },
+  {
+    title: 'FindConnections.net',
+    description:
+      'A Next.js app that lets anyone discover connections between notable individuals by finding instances where they appear together in a photo, either directly or through a short chain of mutual photos. Inspired by six degrees of separation.',
+    link: 'https://findconnections.net',
+    tags: ['Next.js', 'Graph', 'Photos', 'Six Degrees'],
+    image: '/Findconnections.png',
+  },
 ];
 
 const experience = [
@@ -30,9 +38,8 @@ const experience = [
     org: 'Wedge Networks · Calgary, CA',
     period: 'Sep 2023 to Jul 2024',
     details:
-      'Collaboratively designed and developed EdgeInsight with a team of three, an LSTM-based anomaly detection model built in PyTorch for deployment on Litmus Edge, an IoT gateway trusted by enterprise companies.',
+      'Collaboratively designed and developed EdgeInsight with a team of three, a multi-task learning anomaly detection model built in PyTorch for deployment on Litmus Edge, an IoT gateway trusted by enterprise companies.',
     highlights: [
-      'Led technical adaptation of EdgeInsight for Small Modular Reactor (SMR) use cases on nuclear control system cybersecurity.',
       'Engineered a data augmentation pipeline to inject artificial anomalies such as sensor spikes and drifts to train the model.',
       'Built a scalable Java service to process concurrent IoT sensor inference requests in real time, integrating RabbitMQ for reliable live data streaming.',
     ],
@@ -122,7 +129,7 @@ export default function Home() {
                 <p>
                   <span className="hl">Machine Learning Engineer</span> with an MSc in Computer Science from the
                   University of Calgary. As part of a three-person team, I designed and deployed an
-                  <span className="hl"> LSTM-based anomaly detection model</span> running on IoT gateway devices
+                  <span className="hl"> multi-task learning anomaly detection model</span> running on IoT gateway devices
                   for enterprise clients.
                 </p>
                 <p>
@@ -142,7 +149,7 @@ export default function Home() {
                   <div className="stat-label">Years in ML &amp; AI</div>
                 </div>
                 <div className="stat">
-                  <div className="stat-num">2</div>
+                  <div className="stat-num">3</div>
                   <div className="stat-label">Production apps shipped</div>
                 </div>
                 <div className="stat">
