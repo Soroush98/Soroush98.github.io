@@ -7,14 +7,6 @@ import Timeline from '../components/Timeline';
 
 const projects = [
   {
-    title: 'Granted',
-    description:
-      'Find Canadian companies actually doing funded R&D. Upload a resume, paper, or project brief and the system matches you against 48K+ indexed grants from 9 federal and provincial funding sources, surfacing organizations with overlapping research interests.',
-    link: 'https://granted-web.vercel.app/',
-    tags: ['Next.js', 'RAG', 'Embeddings', 'R&D Search'],
-    image: '/Granted.png',
-  },
-  {
     title: 'EZRelocate.org',
     description:
       'Canada-wide rental search. You describe what you’re looking for in plain English; the system returns real rental listings on a map, with reasoning that cites each pick by id.',
