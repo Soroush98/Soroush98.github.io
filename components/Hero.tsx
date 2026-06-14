@@ -15,12 +15,23 @@ export default function Hero() {
           I’m <span className="hl">Soroosh Esmaeilian</span>, a Machine Learning Engineer with an
           MSc from the University of Calgary. Currently exploring{' '}
           <span className="hl">LLMs, RAG systems, and tool-use agents</span> while drawing on
-          industrial experience shipping multi-task learning anomaly detection on enterprise IoT gateways.
+          industrial experience shipping multi-task learning anomaly detection on enterprise IoT
+          gateways.
         </p>
         <div className="hero-ctas">
           <a href="#work" className="btn btn-primary">
             See my work
-            <svg className="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg
+              className="arrow"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
               <path d="M5 12h14M13 5l7 7-7 7" />
             </svg>
           </a>
@@ -30,19 +41,46 @@ export default function Hero() {
         </div>
         <div className="hero-meta">
           <span className="hero-meta-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
               <path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11z" />
             </svg>
             Edmonton, Canada
           </span>
           <span className="hero-meta-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
               <path d="M4 6h16M4 12h16M4 18h10" />
             </svg>
             MSc, Computer Science
           </span>
           <span className="hero-meta-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
               <circle cx="12" cy="12" r="9" />
               <path d="M12 7v5l3 3" />
             </svg>

@@ -82,7 +82,16 @@ const education = [
 ];
 
 const MailIcon = (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <rect x="3" y="5" width="18" height="14" rx="2" />
     <path d="M3 7l9 6 9-6" />
   </svg>
@@ -112,27 +121,32 @@ export default function Home() {
               <div className="section-head-left">
                 <div className="section-tag">01 · About</div>
                 <h2>Hands-on ML, end-to-end shipping.</h2>
-                <p>From research to production. I’ve trained models that ran on enterprise edge devices and now build software that puts language models to work.</p>
+                <p>
+                  From research to production. I’ve trained models that ran on enterprise edge
+                  devices and now build software that puts language models to work.
+                </p>
               </div>
               <span className="section-meta">/who-am-i</span>
             </div>
             <div className="about-grid">
               <div className="about-body">
                 <p>
-                  <span className="hl">Machine Learning Engineer</span> with an MSc in Computer Science from the
-                  University of Calgary. As part of a three-person team, I designed and deployed an
-                  <span className="hl"> multi-task learning anomaly detection model</span> running on IoT gateway devices
-                  for enterprise clients.
+                  <span className="hl">Machine Learning Engineer</span> with an MSc in Computer
+                  Science from the University of Calgary. As part of a three-person team, I designed
+                  and deployed an
+                  <span className="hl"> multi-task learning anomaly detection model</span> running
+                  on IoT gateway devices for enterprise clients.
                 </p>
                 <p>
-                  These days I’m investigating{' '}
-                  <span className="accent">LLMs and RAG systems</span>: Claude and OpenAI APIs,
-                  pgvector embeddings, prompt engineering, and tool-use agents, while keeping current
-                  with the fast-moving AI and software engineering stack.
+                  These days I’m investigating <span className="accent">LLMs and RAG systems</span>:
+                  Claude and OpenAI APIs, pgvector embeddings, prompt engineering, and tool-use
+                  agents, while keeping current with the fast-moving AI and software engineering
+                  stack.
                 </p>
                 <p>
-                  Comfortable across the ML toolkit (<span className="hl">Keras, TensorFlow</span>) and full-stack
-                  development (<span className="hl">Next.js, FastAPI, PostgreSQL</span>).
+                  Comfortable across the ML toolkit (<span className="hl">Keras, TensorFlow</span>)
+                  and full-stack development (
+                  <span className="hl">Next.js, FastAPI, PostgreSQL</span>).
                 </p>
               </div>
               <div className="stat-grid">
@@ -221,10 +235,12 @@ export default function Home() {
                 <span className="pub-venue">IEEE · CNSM 2024</span>
                 <h3 className="pub-title">Coordinated Sampling in SDNs with Dynamic Flow Rates</h3>
                 <p className="pub-authors">
-                  <span className="me">Esmaeilian, S.</span>, Dolati, M., Sadrhaghighi, S., Ghaderi, M.
+                  <span className="me">Esmaeilian, S.</span>, Dolati, M., Sadrhaghighi, S., Ghaderi,
+                  M.
                 </p>
                 <div className="pub-meta">
-                  2024 20th International Conference on Network and Service Management (CNSM), pp. 1–7. IEEE.
+                  2024 20th International Conference on Network and Service Management (CNSM), pp.
+                  1–7. IEEE.
                 </div>
               </article>
             </div>
@@ -248,28 +264,54 @@ export default function Home() {
                 </p>
                 <a className="btn btn-primary" href="mailto:soroosh.esmaeilian@gmail.com">
                   Email me
-                  <svg className="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg
+                    className="arrow"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
                     <path d="M5 12h14M13 5l7 7-7 7" />
                   </svg>
                 </a>
               </div>
               <div className="contact-right">
                 <a className="contact-link" href="mailto:soroosh.esmaeilian@gmail.com">
-                  <span className="contact-icon" aria-hidden>{MailIcon}</span>
+                  <span className="contact-icon" aria-hidden>
+                    {MailIcon}
+                  </span>
                   <span className="contact-info">
                     <span className="label">Email</span>
                     <span className="value">soroosh.esmaeilian@gmail.com</span>
                   </span>
                 </a>
-                <a className="contact-link" href="https://www.linkedin.com/in/sorooshes98" target="_blank" rel="noreferrer">
-                  <span className="contact-icon" aria-hidden>{LinkedInIcon}</span>
+                <a
+                  className="contact-link"
+                  href="https://www.linkedin.com/in/sorooshes98"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="contact-icon" aria-hidden>
+                    {LinkedInIcon}
+                  </span>
                   <span className="contact-info">
                     <span className="label">LinkedIn</span>
                     <span className="value">linkedin.com/in/sorooshes98</span>
                   </span>
                 </a>
-                <a className="contact-link" href="https://github.com/Soroush98" target="_blank" rel="noreferrer">
-                  <span className="contact-icon" aria-hidden>{GitHubIcon}</span>
+                <a
+                  className="contact-link"
+                  href="https://github.com/Soroush98"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="contact-icon" aria-hidden>
+                    {GitHubIcon}
+                  </span>
                   <span className="contact-info">
                     <span className="label">GitHub</span>
                     <span className="value">github.com/Soroush98</span>
@@ -287,7 +329,9 @@ export default function Home() {
             <div className="footer-links">
               <a href="#top">Back to top</a>
               <a href="mailto:soroosh.esmaeilian@gmail.com">Email</a>
-              <a href="https://github.com/Soroush98" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://github.com/Soroush98" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
             </div>
           </footer>
         </div>
