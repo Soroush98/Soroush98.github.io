@@ -6,9 +6,17 @@ type ProjectCardProps = {
   link: string;
   tags: string[];
   image?: string;
+  priority?: boolean;
 };
 
-export default function ProjectCard({ title, description, link, tags, image }: ProjectCardProps) {
+export default function ProjectCard({
+  title,
+  description,
+  link,
+  tags,
+  image,
+  priority = false,
+}: ProjectCardProps) {
   return (
     <article className="proj-card">
       {image && (
@@ -25,6 +33,7 @@ export default function ProjectCard({ title, description, link, tags, image }: P
             width={800}
             height={450}
             sizes="(max-width: 720px) 100vw, (max-width: 1180px) 50vw, 560px"
+            priority={priority}
           />
         </a>
       )}

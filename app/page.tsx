@@ -7,6 +7,30 @@ import Timeline from '../components/Timeline';
 
 const projects = [
   {
+    title: 'primav2',
+    description:
+      'A cloud-native rebuild of Prima on Google Cloud. A five-node LangGraph fleet, reasoning with Gemini on Vertex AI, turns plain-English questions into read-only BigQuery queries over Alibaba’s 247M-sample cluster trace, scores anomalies (MAD/EVT), ranks the metrics behind them, and writes the briefing.',
+    link: 'https://prima-frontend-ae7isnm7wq-uc.a.run.app/',
+    tags: ['LangGraph', 'Gemini', 'BigQuery', 'GCP'],
+    image: '/primav2.png',
+  },
+  {
+    title: 'Prima',
+    description:
+      'An agentic server-health platform built on LangGraph. A fleet of Claude-driven agents writes and runs its own SQL over real server telemetry, detects anomalies, forecasts where a machine is heading, and grades its root-cause attribution against ground truth — then writes a plain-English reliability brief.',
+    link: 'https://prima-web.fly.dev/',
+    tags: ['LangGraph', 'Claude', 'Anomaly Detection', 'Agents'],
+    image: '/prima.png',
+  },
+  {
+    title: 'GrantedJobs.com',
+    description:
+      'Find organizations actually doing the R&D you care about across Canada, the US, UK, and Australia. It indexes their public research-funding history and matches it to your query, resume, or paper using hybrid vector + full-text search with an LLM reranker.',
+    link: 'https://www.grantedjobs.com',
+    tags: ['LLM', 'RAG', 'Hybrid Search', 'Grants'],
+    image: '/granted.png',
+  },
+  {
     title: 'EZRelocate.org',
     description:
       'Canada-wide rental search. You describe what you’re looking for in plain English; the system returns real rental listings on a map, with reasoning that cites each pick by id.',
@@ -180,8 +204,8 @@ export default function Home() {
               <span className="section-meta">/projects</span>
             </div>
             <div className="proj-grid">
-              {projects.map((p) => (
-                <ProjectCard key={p.title} {...p} />
+              {projects.map((p, i) => (
+                <ProjectCard key={p.title} {...p} priority={i < 2} />
               ))}
             </div>
           </section>
