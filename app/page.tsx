@@ -9,7 +9,7 @@ const projects = [
   {
     title: 'primav2',
     description:
-      'A cloud-native rebuild of Prima on Google Cloud. A five-node LangGraph fleet, reasoning with Gemini on Vertex AI, turns plain-English questions into read-only BigQuery queries over Alibaba’s 247M-sample cluster trace, scores anomalies (MAD/EVT), ranks the metrics behind them, and writes the briefing.',
+      'A cloud-native rebuild of Prima on Google Cloud. A seven-node LangGraph fleet, reasoning with Gemini on Vertex AI, turns plain-English questions into guarded read-only BigQuery queries over Alibaba’s 247M-sample cluster trace, routes to one of three anomaly detectors (MAD/EVT, OmniAnomaly, Chronos-Bolt), ranks the metrics behind them, and writes the briefing.',
     link: 'https://prima-frontend-ae7isnm7wq-uc.a.run.app/',
     tags: ['LangGraph', 'Gemini', 'BigQuery', 'GCP'],
     image: '/primav2.png',
@@ -50,6 +50,18 @@ const projects = [
 
 const experience = [
   {
+    title: 'Independent AI Engineer',
+    org: 'Self-directed · Edmonton, CA',
+    period: 'Jan 2026 to Present',
+    details:
+      'Designing and shipping production AI systems end to end — PrimaV2, Granted, and EZrelocate.',
+    highlights: [
+      'Multi-agent LangGraph orchestration on Google Vertex AI.',
+      'Hybrid retrieval combining pgvector semantic search, PostGIS geospatial filters, and Postgres full-text search.',
+      'LLM evaluation pipelines grading detectors and rerankers against ground truth.',
+    ],
+  },
+  {
     title: 'ML Engineering Intern',
     org: 'Wedge Networks · Calgary, CA',
     period: 'Sep 2023 to Jul 2024',
@@ -63,7 +75,7 @@ const experience = [
   {
     title: 'MSc Research, Adaptive Flow Sampling in SDNs',
     org: 'University of Calgary',
-    period: 'Sep 2021 to Dec 2024',
+    period: 'Aug 2021 to Dec 2024',
     details:
       'Designed a network-wide sampling system for SDNs that adapts to dynamic flow rates. Packet-level simulations in ns-3.',
     highlights: [
@@ -94,7 +106,7 @@ const education = [
     details: 'Research focus: adaptive packet sampling in SDNs using ns-3 simulations.',
   },
   {
-    title: "Bachelor's Degree, Computer Science",
+    title: "Bachelor's Degree, Computer Engineering",
     org: 'Amirkabir University of Technology (Tehran Polytechnic)',
     period: '2016 to 2020',
   },
@@ -162,10 +174,10 @@ export default function Home() {
                   on IoT gateway devices for enterprise clients.
                 </p>
                 <p>
-                  These days I’m investigating <span className="accent">LLMs and RAG systems</span>:
-                  Claude and OpenAI APIs, pgvector embeddings, prompt engineering, and tool-use
-                  agents, while keeping current with the fast-moving AI and software engineering
-                  stack.
+                  These days I build and ship <span className="accent">production LLM and RAG systems</span>:
+                  Claude and OpenAI APIs, LangGraph agent orchestration, pgvector embeddings,
+                  prompt engineering, and LLM evaluation, while keeping current with the
+                  fast-moving AI and software engineering stack.
                 </p>
                 <p>
                   Comfortable across the ML toolkit (<span className="hl">Keras, TensorFlow</span>)

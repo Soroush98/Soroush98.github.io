@@ -79,6 +79,7 @@ const groups: Group[] = [
       { name: 'Gemini' },
       { name: 'Vertex AI' },
       { name: 'Prompt Engineering' },
+      { name: 'LangChain' },
       { name: 'LangGraph' },
       { name: 'Tool-use Agents' },
       { name: 'Multi-Agent Systems' },
@@ -89,7 +90,9 @@ const groups: Group[] = [
       { name: 'TensorFlow' },
       { name: 'Keras' },
       { name: 'XGBoost' },
+      { name: 'scikit-learn' },
       { name: 'Embeddings' },
+      { name: 'Voyage AI' },
     ],
   },
   {
