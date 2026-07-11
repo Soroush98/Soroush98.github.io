@@ -15,8 +15,8 @@ export default function Hero() {
           I’m <span className="hl">Soroosh Esmaeilian</span>, a Machine Learning Engineer with an
           MSc from the University of Calgary. I build, deploy, and support{' '}
           <span className="hl">production LLM applications and agent-based systems</span>, drawing
-          on industrial experience shipping multi-task learning anomaly detection on enterprise
-          IoT gateways.
+          on industrial experience shipping multi-task learning anomaly detection on enterprise IoT
+          gateways.
         </p>
         <div className="hero-ctas">
           <a href="#work" className="btn btn-primary">

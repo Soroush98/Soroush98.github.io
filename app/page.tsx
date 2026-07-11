@@ -174,10 +174,11 @@ export default function Home() {
                   on IoT gateway devices for enterprise clients.
                 </p>
                 <p>
-                  These days I build and ship <span className="accent">production LLM and RAG systems</span>:
-                  Claude and OpenAI APIs, LangGraph agent orchestration, pgvector embeddings,
-                  prompt engineering, and LLM evaluation, while keeping current with the
-                  fast-moving AI and software engineering stack.
+                  These days I build and ship{' '}
+                  <span className="accent">production LLM and RAG systems</span>: Claude and OpenAI
+                  APIs, LangGraph agent orchestration, pgvector embeddings, prompt engineering, and
+                  LLM evaluation, while keeping current with the fast-moving AI and software
+                  engineering stack.
                 </p>
                 <p>
                   Comfortable across the ML toolkit (<span className="hl">Keras, TensorFlow</span>)
