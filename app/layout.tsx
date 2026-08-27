@@ -20,15 +20,19 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Soroosh Esmaeilian · ML Engineer · LLMs · RAG',
   description:
-    'Machine Learning Engineer building production LLM and RAG systems. MSc, University of Calgary.',
+    'Machine Learning Engineer building production LLM and RAG systems. MSc, University of Calgary. Based in Calgary — open to relocation anywhere in Canada.',
 };
 
 // Static export to GitHub Pages can't set HTTP response headers, so the
 // Content-Security-Policy is declared as a meta tag. 'unsafe-inline' for
 // scripts/styles is required by Next.js' inline runtime and the GA4 snippet.
+// React's development build additionally needs 'unsafe-eval' (source-mapped
+// stacks, Fast Refresh); the production build never evals, so it stays out.
+const devEval = process.env.NODE_ENV === 'production' ? '' : " 'unsafe-eval'";
+
 const csp = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
+  `script-src 'self' 'unsafe-inline'${devEval} https://www.googletagmanager.com`,
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com",
   "font-src 'self'",

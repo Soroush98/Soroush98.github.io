@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="hero-copy">
         <div className="hero-eyebrow">
           <span className="dot" aria-hidden />
-          Open to ML / LLM engineering roles
+          Open to ML / LLM engineering &amp; IT roles
         </div>
         <h1>
           ML Engineer <span className="grad">shipping production LLMs &amp; RAG</span>.
@@ -16,7 +16,9 @@ export default function Hero() {
           MSc from the University of Calgary. I build, deploy, and support{' '}
           <span className="hl">production LLM applications and agent-based systems</span>, drawing
           on industrial experience shipping multi-task learning anomaly detection on enterprise IoT
-          gateways.
+          gateways. Based in <span className="hl">Calgary</span> and{' '}
+          <span className="hl">available for relocation anywhere in Canada</span> — also open to
+          junior IT support and system administrator roles.
         </p>
         <div className="hero-ctas">
           <a href="#work" className="btn btn-primary">
@@ -53,7 +55,7 @@ export default function Hero() {
             >
               <path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11z" />
             </svg>
-            Edmonton, Canada
+            Calgary, Canada
           </span>
           <span className="hero-meta-item">
             <svg
@@ -107,7 +109,11 @@ export default function Hero() {
         </div>
         <div className="profile-row">
           <span className="k">Location</span>
-          <span className="v">Edmonton, CA</span>
+          <span className="v">Calgary, CA</span>
+        </div>
+        <div className="profile-row">
+          <span className="k">Relocation</span>
+          <span className="v">Anywhere in Canada</span>
         </div>
         <div className="profile-row">
           <span className="k">Education</span>
@@ -124,6 +130,10 @@ export default function Hero() {
         <div className="profile-row">
           <span className="k">Status</span>
           <span className="v accent">Open to roles</span>
+        </div>
+        <div className="profile-row">
+          <span className="k">Also open to</span>
+          <span className="v">IT support · SysAdmin</span>
         </div>
         <div className="profile-tags">
           <span className="profile-tag">claude-api</span>

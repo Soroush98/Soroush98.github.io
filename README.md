@@ -1,6 +1,6 @@
 ## Soroosh Esmaeilian
 
-ML Engineer based in Edmonton, Canada. MSc, Computer Science (University of Calgary).
+ML Engineer based in Calgary, Canada, available for relocation anywhere in Canada. MSc, Computer Science (University of Calgary).
 
 Currently investigating LLMs and RAG systems. Background in PyTorch, anomaly detection on IoT edge, and SDN research.
 

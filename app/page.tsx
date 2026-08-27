@@ -31,11 +31,11 @@ const projects = [
     image: '/granted.png',
   },
   {
-    title: 'EZRelocate.org',
+    title: 'Rental Listings Scraper',
     description:
-      'Canada-wide rental search. You describe what you’re looking for in plain English; the system returns real rental listings on a map, with reasoning that cites each pick by id.',
-    link: 'https://ezrelocate.org',
-    tags: ['LLM', 'RAG', 'Map Search', 'Rentals'],
+      'A published Apify Actor (formerly EZrelocate) that pulls rentals from Kijiji and RentFaster in Canada, OpenRent in the UK, and Zumper in the US into one normalized, cross-source deduplicated schema. ~1.9M bundled OpenStreetMap POIs attach nearest-amenity distances to every listing, so “2-bed under $2500 within 800m of a subway” is a server-side filter. MCP-ready, so Claude can run it from a plain-English request and reason over the results.',
+    link: 'https://apify.com/soroush98/rental-listings-scraper',
+    tags: ['Apify Actor', 'Python', 'Web Scraping', 'MCP'],
     image: '/EZrelocate.png',
   },
   {
@@ -51,10 +51,10 @@ const projects = [
 const experience = [
   {
     title: 'Independent AI Engineer',
-    org: 'Self-directed · Edmonton, CA',
+    org: 'Self-directed · Calgary, CA',
     period: 'Jan 2026 to Present',
     details:
-      'Designing and shipping production AI systems end to end — PrimaV2, Granted, and EZrelocate.',
+      'Designing and shipping production AI systems end to end — PrimaV2, Granted, and a multi-country rental-data Actor on the Apify Store.',
     highlights: [
       'Multi-agent LangGraph orchestration on Google Vertex AI.',
       'Hybrid retrieval combining pgvector semantic search, PostGIS geospatial filters, and Postgres full-text search.',
@@ -185,6 +185,14 @@ export default function Home() {
                   and full-stack development (
                   <span className="hl">Next.js, FastAPI, PostgreSQL</span>).
                 </p>
+                <p>
+                  I’m based in <span className="hl">Calgary</span> and{' '}
+                  <span className="accent">available for relocation anywhere in Canada</span>.
+                  Alongside ML and LLM engineering, I’m open to{' '}
+                  <span className="hl">junior IT support and system administrator</span> roles,
+                  backed by networking fundamentals from my MSc research in software-defined
+                  networking and by deploying and supporting my own services in production.
+                </p>
               </div>
               <div className="stat-grid">
                 <div className="stat">
@@ -288,7 +296,11 @@ export default function Home() {
               <div className="section-head-left">
                 <div className="section-tag">07 · Contact</div>
                 <h2>Let’s build something.</h2>
-                <p>Open to ML engineering, LLM/RAG, and full-stack product roles.</p>
+                <p>
+                  Open to ML engineering, LLM/RAG, and full-stack product roles, as well as junior
+                  IT support and system administrator roles. Based in Calgary, available for
+                  relocation anywhere in Canada.
+                </p>
               </div>
               <span className="section-meta">/reach-out</span>
             </div>
@@ -361,7 +373,7 @@ export default function Home() {
           <footer className="footer">
             <div className="footer-brand">
               <span className="nav-dot" aria-hidden />
-              <span>Soroosh Esmaeilian · Edmonton, Canada</span>
+              <span>Soroosh Esmaeilian · Calgary, Canada</span>
             </div>
             <div className="footer-links">
               <a href="#top">Back to top</a>
