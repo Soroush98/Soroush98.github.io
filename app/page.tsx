@@ -13,6 +13,7 @@ const projects = [
     link: 'https://github.com/Soroush98/OpsWarden',
     linkLabel: 'View on GitHub',
     tags: ['LangGraph', 'Kubernetes', 'Ansible', 'Human-in-the-loop'],
+    image: '/opswarden.png',
   },
   {
     title: 'primav2',
