@@ -11,7 +11,6 @@ const projects = [
     description:
       'An AI teammate for IT operations that can read everything and change nothing without a human’s approval. A detector watches auth logs in Elasticsearch, a deterministic policy picks from an allowlist of Ansible playbooks, Claude writes the plain-English incident and risk assessment, and a LangGraph agent pauses on a ServiceNow ticket until an LDAP-verified admin clicks Approve. Runs on GKE against real Rocky Linux servers.',
     link: 'https://github.com/Soroush98/OpsWarden',
-    linkLabel: 'View on GitHub',
     tags: ['LangGraph', 'Kubernetes', 'Ansible', 'Human-in-the-loop'],
     image: '/opswarden.png',
   },
@@ -19,7 +18,7 @@ const projects = [
     title: 'primav2',
     description:
       'A cloud-native rebuild of Prima on Google Cloud. A seven-node LangGraph fleet, reasoning with Gemini on Vertex AI, turns plain-English questions into guarded read-only BigQuery queries over Alibaba’s 247M-sample cluster trace, routes to one of three anomaly detectors (MAD/EVT, OmniAnomaly, Chronos-Bolt), ranks the metrics behind them, and writes the briefing.',
-    link: 'https://prima-frontend-ae7isnm7wq-uc.a.run.app/',
+    link: 'https://github.com/Soroush98/primav2',
     tags: ['LangGraph', 'Gemini', 'BigQuery', 'GCP'],
     image: '/primav2.png',
   },
@@ -27,7 +26,7 @@ const projects = [
     title: 'Prima',
     description:
       'An agentic server-health platform built on LangGraph. A fleet of Claude-driven agents writes and runs its own SQL over real server telemetry, detects anomalies, forecasts where a machine is heading, and grades its root-cause attribution against ground truth — then writes a plain-English reliability brief.',
-    link: 'https://prima-web.fly.dev/',
+    link: 'https://github.com/Soroush98/prima',
     tags: ['LangGraph', 'Claude', 'Anomaly Detection', 'Agents'],
     image: '/prima.png',
   },
@@ -35,7 +34,7 @@ const projects = [
     title: 'GrantedJobs.com',
     description:
       'Find organizations actually doing the R&D you care about across Canada, the US, UK, and Australia. It indexes their public research-funding history and matches it to your query, resume, or paper using hybrid vector + full-text search with an LLM reranker.',
-    link: 'https://www.grantedjobs.com',
+    link: 'https://github.com/Soroush98/Granted',
     tags: ['LLM', 'RAG', 'Hybrid Search', 'Grants'],
     image: '/granted.png',
   },
@@ -43,7 +42,7 @@ const projects = [
     title: 'Rental Listings Scraper',
     description:
       'A published Apify Actor (formerly EZrelocate) that pulls rentals from Kijiji and RentFaster in Canada, OpenRent in the UK, and Zumper in the US into one normalized, cross-source deduplicated schema. ~1.9M bundled OpenStreetMap POIs attach nearest-amenity distances to every listing, so “2-bed under $2500 within 800m of a subway” is a server-side filter. MCP-ready, so Claude can run it from a plain-English request and reason over the results.',
-    link: 'https://apify.com/soroush98/rental-listings-scraper',
+    link: 'https://github.com/Soroush98/EZrelocate',
     tags: ['Apify Actor', 'Python', 'Web Scraping', 'MCP'],
     image: '/EZrelocate.png',
   },
@@ -51,7 +50,7 @@ const projects = [
     title: 'FindConnections.net',
     description:
       'A Next.js app that lets anyone discover connections between notable individuals by finding instances where they appear together in a photo, either directly or through a short chain of mutual photos. Inspired by six degrees of separation.',
-    link: 'https://findconnections.net',
+    link: 'https://github.com/Soroush98/FindConnections',
     tags: ['Next.js', 'Graph', 'Photos', 'Six Degrees'],
     image: '/Findconnections.png',
   },

@@ -14,7 +14,7 @@ export default function ProjectCard({
   title,
   description,
   link,
-  linkLabel = 'Visit site',
+  linkLabel = 'View on GitHub',
   tags,
   image,
   priority = false,

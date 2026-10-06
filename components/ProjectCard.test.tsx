@@ -21,16 +21,16 @@ describe('ProjectCard', () => {
 
   it('opens external links safely with rel=noopener noreferrer', () => {
     render(<ProjectCard {...props} />);
-    const visit = screen.getByRole('link', { name: /Visit site/i });
+    const visit = screen.getByRole('link', { name: /View on GitHub/i });
     expect(visit).toHaveAttribute('href', 'https://ezrelocate.org');
     expect(visit).toHaveAttribute('target', '_blank');
     expect(visit).toHaveAttribute('rel', 'noopener noreferrer');
   });
 
   it('uses a custom link label when one is given', () => {
-    render(<ProjectCard {...props} link="https://github.com/x/y" linkLabel="View on GitHub" />);
-    const visit = screen.getByRole('link', { name: /View on GitHub/i });
-    expect(visit).toHaveAttribute('href', 'https://github.com/x/y');
-    expect(screen.queryByRole('link', { name: /Visit site/i })).not.toBeInTheDocument();
+    render(<ProjectCard {...props} link="https://demo.example" linkLabel="Live demo" />);
+    const visit = screen.getByRole('link', { name: /Live demo/i });
+    expect(visit).toHaveAttribute('href', 'https://demo.example');
+    expect(screen.queryByRole('link', { name: /View on GitHub/i })).not.toBeInTheDocument();
   });
 });
