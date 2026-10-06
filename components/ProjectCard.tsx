@@ -4,6 +4,7 @@ type ProjectCardProps = {
   title: string;
   description: string;
   link: string;
+  linkLabel?: string;
   tags: string[];
   image?: string;
   priority?: boolean;
@@ -13,6 +14,7 @@ export default function ProjectCard({
   title,
   description,
   link,
+  linkLabel = 'Visit site',
   tags,
   image,
   priority = false,
@@ -64,7 +66,7 @@ export default function ProjectCard({
           ))}
         </div>
         <a className="proj-link" href={link} target="_blank" rel="noopener noreferrer">
-          Visit site
+          {linkLabel}
           <svg
             width="14"
             height="14"

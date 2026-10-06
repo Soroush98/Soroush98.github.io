@@ -7,6 +7,14 @@ import Timeline from '../components/Timeline';
 
 const projects = [
   {
+    title: 'OpsWarden',
+    description:
+      'An AI teammate for IT operations that can read everything and change nothing without a human’s approval. A detector watches auth logs in Elasticsearch, a deterministic policy picks from an allowlist of Ansible playbooks, Claude writes the plain-English incident and risk assessment, and a LangGraph agent pauses on a ServiceNow ticket until an LDAP-verified admin clicks Approve. Runs on GKE against real Rocky Linux servers.',
+    link: 'https://github.com/Soroush98/OpsWarden',
+    linkLabel: 'View on GitHub',
+    tags: ['LangGraph', 'Kubernetes', 'Ansible', 'Human-in-the-loop'],
+  },
+  {
     title: 'primav2',
     description:
       'A cloud-native rebuild of Prima on Google Cloud. A seven-node LangGraph fleet, reasoning with Gemini on Vertex AI, turns plain-English questions into guarded read-only BigQuery queries over Alibaba’s 247M-sample cluster trace, routes to one of three anomaly detectors (MAD/EVT, OmniAnomaly, Chronos-Bolt), ranks the metrics behind them, and writes the briefing.',
