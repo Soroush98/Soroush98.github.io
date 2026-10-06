@@ -31,7 +31,7 @@ const projects = [
     image: '/prima.png',
   },
   {
-    title: 'GrantedJobs.com',
+    title: 'Granted',
     description:
       'Find organizations actually doing the R&D you care about across Canada, the US, UK, and Australia. It indexes their public research-funding history and matches it to your query, resume, or paper using hybrid vector + full-text search with an LLM reranker.',
     link: 'https://github.com/Soroush98/Granted',
@@ -42,12 +42,13 @@ const projects = [
     title: 'Rental Listings Scraper',
     description:
       'A published Apify Actor (formerly EZrelocate) that pulls rentals from Kijiji and RentFaster in Canada, OpenRent in the UK, and Zumper in the US into one normalized, cross-source deduplicated schema. ~1.9M bundled OpenStreetMap POIs attach nearest-amenity distances to every listing, so “2-bed under $2500 within 800m of a subway” is a server-side filter. MCP-ready, so Claude can run it from a plain-English request and reason over the results.',
-    link: 'https://github.com/Soroush98/EZrelocate',
+    link: 'https://apify.com/soroush98/rental-listings-scraper',
+    linkLabel: 'Run on Apify',
     tags: ['Apify Actor', 'Python', 'Web Scraping', 'MCP'],
     image: '/EZrelocate.png',
   },
   {
-    title: 'FindConnections.net',
+    title: 'FindConnections',
     description:
       'A Next.js app that lets anyone discover connections between notable individuals by finding instances where they appear together in a photo, either directly or through a short chain of mutual photos. Inspired by six degrees of separation.',
     link: 'https://github.com/Soroush98/FindConnections',
